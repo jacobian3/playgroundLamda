@@ -145,23 +145,28 @@ for item in os.listdir('/'):
 #THE CURRENT WORKING DIRECTORY
 # You can get the current working directory as a string value with 
 # the os.getcwd() function and change it with os.chdir().
+# *the os.chdir() changes
 
 # CREATING NEW FOLDERS WITH OS.MAKEDIRS()
 
 # HANDLING ABSOLUTE AND RELATIVE PATHS
-os.path.abspath(path)
-os.path.isabs(path)
-os.path.relpath(path, start)
+# os.path.abspath(path)
+# os.path.isabs(path)
+# os.path.relpath(path, start) ; <path> folder ->  ../<start> (the last '/')
+# os.path.sep ; returns correct seperator for  operating sys ('/') ('\')
+# os.path.dirname(path)
+# os.path.basename(path)
 
 # FINDING FILE SIZES AND FOLDER CONTENTS
-os.path.getsize(path)
-os.listdir(path) 
+# os.path.getsize(path)
+# os.listdir(path) 
 
 # CHECKING PATH VALIDITY
-os.path.exists(path)
-os.path.isfile(path)
-os.path.isdir(path)
+# os.path.exists(path)
+# os.path.isfile(path)
+# os.path.isdir(path)
 
 
-
+# *os.path.split() - ... 
+# *os.path.join() - ... is helpful if y need to create strings for filenames
 
