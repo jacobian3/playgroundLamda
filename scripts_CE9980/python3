@@ -1,0 +1,10 @@
+# EXAMPLE OF TECHNIQE
+os import
+
+os.getcwd()
+exit()
+
+fh = open('../script_data/FF-abbreviated.txt')
+
+for line in fh:
+    print(line)

@@ -1,0 +1,9 @@
+lendic = {}
+mylist = 'Hey there I am amazing!'.split()
+
+for word in mylist:
+    lendic[word] = len(word)
+
+word = input("please enter a word: ")
+
+print('the word "{}" is len {}.'.format(word,lendic[word]))

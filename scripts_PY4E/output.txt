@@ -1,0 +1,2 @@
+This is a test of character count.
+This is the 2nd character count.

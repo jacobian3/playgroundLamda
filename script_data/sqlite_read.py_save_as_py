@@ -1,0 +1,20 @@
+#!/usr/bin/python
+
+
+import sqlite3
+conn = sqlite3.connect('sqlite3_trades.db')
+
+curs = conn.cursor()
+
+# Create table
+curs.execute("""SELECT date, trans_type, qty, price FROM stocks WHERE symbol = 'AAPL'""")
+
+for row in curs:
+    print row
+
+# Close the connection as a matter of habit
+conn.close()
+
+
+
+

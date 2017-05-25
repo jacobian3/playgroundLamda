@@ -1,0 +1,13 @@
+ove the cursor to this line.
+
+ress  v  and move the cursor to the fifth item below.  Notice that the
+ext is highlighted.
+
+ress the  :  character.  At the bottom of the screen  :'<,'> will appear.
+
+ype  w TEST  , where TEST is a filename that does not exist yet.  Verify
+hat you see  :'<,'>w TEST  before you press <ENTER>.
+
+im will write the selected lines to the file TEST.  Use  :!dir  or  :!ls
+o see it.  Do not remove it yet!  We will use it in the next lesson.
+
