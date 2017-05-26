@@ -58,6 +58,53 @@
 # STDOUT (standard output stream: default screen)
 # STDERR (standard error output stream: default screen) 
 
+------------------------------------Exceptions
+
+# INTRODUCTION: EXCEPTIONS
+# What is an exception? 
+# What are the two types of errors? Which one is handled with an exception?
+
+# SUMMARY: EXCEPTIONS SIGNIFY AN ERROR CONDITION
+# When is an exception raised?
+# Name the 4 different types of anticipateable errors?
+
+# SUMMARY STATEMENTS: TRY BLOCK AND EXCEPT BLOCK
+# How to avoid an anticipatable exception?
+# Explain the try and exception blocks?
+
+# SUMMARY TECHNIQUE: TRAPPING MULTIPLE EXCEPTIONS
+# SUMMARY TECHNIQUE: CHAINING EXCEPT: BLOCKS
+# How do we trap multiple exeptions? What are the two methods employed?
+
+------------------------------------ ATBS notes
+#THE CURRENT WORKING DIRECTORY
+# You can get the current working directory as a string value with 
+# the os.getcwd() function and change it with os.chdir().
+# *the os.chdir() changes
+
+# CREATING NEW FOLDERS WITH OS.MAKEDIRS()
+
+# HANDLING ABSOLUTE AND RELATIVE PATHS
+# os.path.abspath(path)
+# os.path.isabs(path)
+# os.path.relpath(path, start) ; <path> folder ->  ../<start> (the last '/')
+# os.path.sep ; returns correct seperator for  operating sys ('/') ('\')
+# os.path.dirname(path)
+# os.path.basename(path)
+# *os.path.split() - ... 
+# *os.path.join() - ... is helpful if y need to create strings for filenames
+
+# FINDING FILE SIZES AND FOLDER CONTENTS
+# os.path.getsize(path)
+# os.listdir(path) 
+
+# CHECKING PATH VALIDITY
+# os.path.exists(path)
+# os.path.isfile(path)
+# os.path.isdir(path)
+
+
+
 # === write STDOUT to a file with '>' === 
 # 
 # $ myprog > myfile.txt
@@ -122,51 +169,4 @@ for item in os.listdir('/'):
     if os.path.isfile(item):
         print(os.path.getsize(item))
 # SYS.ARGV
-
-------------------------------------Exceptions
-
-# INTRODUCTION: EXCEPTIONS
-# What is an exception? 
-# What are the two types of errors? Which one is handled with an exception?
-
-# SUMMARY: EXCEPTIONS SIGNIFY AN ERROR CONDITION
-# When is an exception raised?
-# Name the 4 different types of anticipateable errors?
-
-# SUMMARY STATEMENTS: TRY BLOCK AND EXCEPT BLOCK
-# How to avoid an anticipatable exception?
-# Explain the try and exception blocks?
-
-# SUMMARY TECHNIQUE: TRAPPING MULTIPLE EXCEPTIONS
-# SUMMARY TECHNIQUE: CHAINING EXCEPT: BLOCKS
-# How do we trap multiple exeptions? What are the two methods employed?
-
------------------------------------- ATBS notes
-#THE CURRENT WORKING DIRECTORY
-# You can get the current working directory as a string value with 
-# the os.getcwd() function and change it with os.chdir().
-# *the os.chdir() changes
-
-# CREATING NEW FOLDERS WITH OS.MAKEDIRS()
-
-# HANDLING ABSOLUTE AND RELATIVE PATHS
-# os.path.abspath(path)
-# os.path.isabs(path)
-# os.path.relpath(path, start) ; <path> folder ->  ../<start> (the last '/')
-# os.path.sep ; returns correct seperator for  operating sys ('/') ('\')
-# os.path.dirname(path)
-# os.path.basename(path)
-
-# FINDING FILE SIZES AND FOLDER CONTENTS
-# os.path.getsize(path)
-# os.listdir(path) 
-
-# CHECKING PATH VALIDITY
-# os.path.exists(path)
-# os.path.isfile(path)
-# os.path.isdir(path)
-
-
-# *os.path.split() - ... 
-# *os.path.join() - ... is helpful if y need to create strings for filenames
 
