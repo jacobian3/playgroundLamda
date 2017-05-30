@@ -9,6 +9,7 @@ try:
     #dirname = sys.argv[1]
     dirname = '../script_data' #test of existing dir/file
     #dirname = '../script_dataxxxnonexistxxx' # test of non-existing dir/file
+    
 except IndexError:
     exit("error: please provide an argument")
 

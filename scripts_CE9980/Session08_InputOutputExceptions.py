@@ -1,5 +1,4 @@
 #---------------------- FILE, DIRECTORY AND EXTERNAL PROGRAM I/O; EXCEPTIONS
-
 # INDEXERROR WITH SYS.ARGV (WHEN USER PASSES NO ARGUMENT)
 # when using sys.argv, what happens when the user passes no argument?
     # sys module
@@ -10,7 +9,8 @@
 # When we need to open or append a file how do we do it?
     # file write() method
     # explicit newlines
-    # we can use "with" to avoid having to close the file
+    # we can use a context mgr: "with"; to avoid having to close the file
+    # manually
 # x
         
 # SUMMARY TASK: REDIRECTING THE STDOUT DATA STREAM
@@ -52,6 +52,7 @@
 # SUMMARY TASK: READ DIRECTORIES WITH OS.LISTDIR()
 # What are the functions employed in order to read a directory?
     # os.listdir(path) 
+
 # How does os.path.join() help with this?
     # NOTE:
     # The os.path.join() function is helpful if you need to create strings for 
@@ -62,11 +63,11 @@
     # HANDLING ABSOLUTE AND RELATIVE PATHS
     # os.path.abspath(path)
     # os.path.isabs(path)
-    # os.path.relpath(path, start) ; <path> folder ->  ../<start> (the last '/')
+    # os.path.relpath(path, start); <path> folder ->  ../<start> (the last '/')
     # os.path.dirname(path)
     # os.path.basename(path)
     # *os.path.split() - ... 
-    # *os.path.join() - ... is helpful if y need to create strings for filenames
+    # *os.path.join() - ...is helpful if y need to create strings for filenames
 # x
 
 #THE CURRENT WORKING DIRECTORY
@@ -128,15 +129,20 @@
 # INTRODUCTION: EXCEPTIONS
 # What is an exception? 
 # What are the two types of errors? Which one is handled with an exception?
+# x
 
 # SUMMARY: EXCEPTIONS SIGNIFY AN ERROR CONDITION
 # When is an exception raised?
 # Name the 4 different types of anticipateable errors?
+# x
 
 # SUMMARY STATEMENTS: TRY BLOCK AND EXCEPT BLOCK
 # How to avoid an anticipatable exception?
 # Explain the try and exception blocks?
+# x
 
 # SUMMARY TECHNIQUE: TRAPPING MULTIPLE EXCEPTIONS
 # SUMMARY TECHNIQUE: CHAINING EXCEPT: BLOCKS
 # How do we trap multiple exeptions? What are the two methods employed?
+# x
+
