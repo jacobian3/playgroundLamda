@@ -1,3 +1,19 @@
+# SUMMARY ALGORITM (STEPS)
+# What is the Summary algorithm? How to implement steps?
+    # allows parsing of tabular structures
+
+fh = open('F-F_abbreviated.txt') # 1. open and assign file handle
+
+mysum = 0.0 # 2. initialize float value
+for line in fh:
+    line = line.rstrip() # 3. remove newline
+    items = line.split() # 4. remove header information
+    mysum = mysum + float(val)
+print(mynum)
+
+
+
+
 # COLLECITONS AND ANALYSIS 
 
 #var = [1, 4.3, 6.9, 11, 15]

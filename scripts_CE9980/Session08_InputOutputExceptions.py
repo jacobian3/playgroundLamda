@@ -57,7 +57,7 @@
     # NOTE:
     # The os.path.join() function is helpful if you need to create strings for 
     # filenames.
-    # os.path.sep ; returns correct seperator for  operating sys ('/') ('\')
+    # os.path.sep ; returns correct seperator for operating sys ('/') ('\')
     # backslash on Windows and Forward Slash on OS X and Linux
 
     # HANDLING ABSOLUTE AND RELATIVE PATHS
