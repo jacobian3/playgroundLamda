@@ -12,8 +12,6 @@ for line in fh:
 print(mynum)
 
 
-
-
 # COLLECITONS AND ANALYSIS 
 
 #var = [1, 4.3, 6.9, 11, 15]
