@@ -6,4 +6,5 @@
 __pycache__
 *.pycdebug.log
 /courseMaterial
+/script_playground
 .DS_Store
