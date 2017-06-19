@@ -20,6 +20,7 @@ scripts_CE9980/courseMateial_CE9980/*
 scripts_CE9980/courseMateial_CE9986/*
 script_playground/*
 
+
 # Logs and databases #
 ######################
 *.log
