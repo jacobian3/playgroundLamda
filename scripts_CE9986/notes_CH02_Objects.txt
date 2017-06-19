@@ -1,0 +1,28 @@
+-
+How to create classes and instantiate objects in Python?
+
+How to add attributes and behaviors to Python objects?
+
+How to organize classes into packages and modules?
+
+How to suggest people don't clobber our data?
+-
+
+CREATING PYTHON CLASSES
+
+MODULES AND PACKAGES
+
+-
+class syntax
+
+attributes and methods
+
+initializers and constructors
+
+modules and packages
+
+relative and absolute imports
+
+access control and its limitations
+-
+

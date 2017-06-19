@@ -1,0 +1,109 @@
+## FUNCTIONAL PROGRAMMING: OVERVIEW
+
+What is state?
+		state = value of various variables
+
+		procedural:
+		global vars
+
+		oop:
+		obj attribue holds state (encaps) in the object
+
+		functional:
+		state desn't change ; handled directly by ea. function
+
+what is pure function?
+	funct takes input, proces, deliv output; however, doesnt touch anyother
+	part of the code. doesn't  read fr./write2 another var in the code
+	(i.ie. global)
+
+## REVIEW: LAMBDAS
+note: Can take mult arg and mult value returns; as TUPLE!; used like sorted w/
+	map, filter, and reduce in this way
+
+
+## REVIEW: LIST COMPREHENSIONS; SET COMPREHENSIONS AND DICT COMPREHENSIONS
+**same as list comps.
+**nothing special about them; they return: sets and dicts respectively
+
+- first element of comprehension is the state!
+- for set uniques elements are returned as state change
+- both set/dict comps. have curly braces
+- HOWEVER: for dicts key:val pair returned as state; denote by ':' in state
+
+NOTE: open parenthesis or brace allows statement to be broken b/t lines; very
+usefull!!; must be on whitespace; indents don't mean anything in b/t
+till it finds close brace. Include parenthesis, braces at whim
+
+## MAP() AND FILTER() AS ALTERNATIVES TO LIST COMPREHENSIONS
+- precurser to comprehensisons
+	map takes 1st func, then iter-item (after 'argument:')
+
+	map is similar to list comp; in list comp:
+	the comp: 1st takes a func then an iter-item
+
+	nesting of filter and map is done to recreate a comprehension.
+	produces a smaller list
+
+	lambda used often, when functions are the args
+
+	mapping is faster that list-comp; mapping is a function; funct are 
+	compiled in C
+
+What is a higher-order Function?
+
+## REDUCE() FOR ACCUMULATION OF VALUES
+
+2 special args: item being delt with and accumulator
+
+??? why does a start as zero; see this in another video
+example clarified in marry rose cook book: reduce section
+
+## ANY() AND ALL(): RETURN TRUE BASED ON TRUTH OF ELEMENTS
+
+any - T, if at least 1; F, if none is True 
+all - T, if all are T, F, if one item not T
+
+## TERNARY (IF/THEN/ELSE) ASSIGNMENT; CONDITIONAL ASSIGNMENT
+review
+
+## ITERATORS
+review
+
+What is an iterator?
+range(0,10) # python2 -> list ; python3 -> range object; lazy fetch produces
+<class 'range>; the object only feeds us elements, as we ask for them 
+list are expensive objects
+
+## GENERATORS
+
+What is a generator? behavior
+	given an iterator, the object only feeds us elements, as we ask for them 
+
+	generator is a type of iterator: however, generator doesn't iterate through
+	all elements; saves memory
+
+	it holds on to its state b/t calls
+
+	uses: next and yield, as key words to do this
+
+	yield is like a return. HOWEVER, the function doesn't stop holdin on to
+	the value; yield auto creates a 'next'
+
+NOTE: closure def - holds on to its own variables
+
+## RECURSIVE FUNCTIONS
+good for situations where you don't know where the end is
+operations that happens multiple times, however we don't know how many
+-file tree(dont' know how low to go), parent company 
+example (dont' know how high to go); this is called 'base-case'
+
+What are the baic elements of recursion?
+	Any recursive method will contain three basic elements:
+	1. Test to stop or continue recusion
+	2. end case(base case) that terminates the recursion
+	3. a recursive call, that contains the recursion
+
+	all recursion: can be performed with selection and iteration
+	However: recursion-pros: much less accounting; no counter, no 
+	inclination/declanation, no loop

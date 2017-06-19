@@ -1,0 +1,65 @@
+## REGULAR EXPRESSIONS: INTRODUCTION
+## 
+re -> declarative language; like SQL
+
+r'' is a raw string; it negates the evaluation of special characters i.e., 
+	print(\n) 		# prints nothing; a new line
+	print(r'\n) 	# prints \n
+
+
+## THE RE MODULE AND RE.SEARCH() FUNCTION
+## 
+re.search - takes 2 args: 1st is pattern ; 2nd string to be evaluated
+
+evaluates to bool
+match = True
+no match(None) = False
+
+
+## THE RAW STRING (R'')
+## 
+## "NOT" FOR NEGATING A SEARCH
+## 
+## THE RE VOCABULARY
+## 
+Complete FlashCards - know by rote
+
+## PATTERNS CAN MATCH ANYWHERE, BUT MUST MATCH ON CONSECUTIVE CHARACTERS
+## 
+How does re.search work?
+	re.search reads the string from beginning to end looking for a pattern
+	- it looks for consecutive match to string
+	- only looks through one string at a time
+	- ^ beginning
+	- $ at the end
+	- spaces are charachters too	
+
+## ANCHORS AND BOUNDARY
+## 
+## CHARACTER CLASSES
+## BUILT-IN CHARACTER CLASS: DIGITS
+## BUILT-IN CHARACTER CLASS: "WORD" CHARACTERS
+## BUILT-IN CHARACTER CLASS: space CHARACTERS
+
+	
+## INVERSE CHARACTER CLASSES
+
+
+
+
+## CUSTOM CHARACTER CLASSES
+
+
+## NEGATIVE CUSTOM CHARACTER CLASSES
+
+## THE WILDCARD (.)
+won't match on a \n
+
+## QUANTIFIERS: SPECIFIES HOW MANY TO LOOK FOR
+there are 3
+is applied to what is immmediate preceeding; one or more chrs
+( what ever they are placed after )
+
+## RE.SEARCH(), RE.COMPILE() AND THE COMPILE OBJECT))
+
+## GROUPING FOR ALTERNATES: VERTICAL BAR

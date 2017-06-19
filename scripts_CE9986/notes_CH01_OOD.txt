@@ -1,0 +1,98 @@
+DEF -> FLASHCARDS: 
+OOA - the process of looking at a problem; id objects & interactions p. 8
+	objents = nouns; methods = verbs
+OOD - how things should be done p. 8
+OOP - conversion of OOA => OOD 
+  		(*) the multiplicity  p. 11
+		instances, objects are ... of classes that can be associated with ea. 
+		other 
+invoke method .. p 13
+interface p.14
+abstraction p. 16 (def at top and bottom: tech)
+object diagaram - aka: instance diagram: p18
+aggrigation p19
+interface p22
+
+
+
+OBJECT ORIENTED DESIGN:
+
+Q: 
+C:
+
+Q: What does OOP mean?
+- 
+C: collection of dat and associated behaviors p. 7
+
+
+Q: How do we determine diff. b/t objects? p. 9
+- UML: use cases, deployment, state changes, and activities
+  class and obj dia
+C: term used for 'kinds of objects' is class. Classes describe objects:
+  blueprints; apple, oranges, baskets, barrels are kinds of objects
+
+Q: 
+C:
+
+
+SPECIFYING ATTRIBUTES AND BEHAVIORS
+
+Q: What is an object instance? p. 11
+C: 
+
+Q: How does data describe objects? p. 11
+- prop = attribues; HOWEVER: attribues are settable; properties are static; 
+  generally 'read-only'
+- gen. not concerned with implimentation
+C: attributes; aka properties: differnt oranges have different weights 
+but they can be the same
+
+Q: Contrast Data with behavior?
+- accept parameters and ret. values; parameters for methods = list of objects
+passed into it. ret values are the result of that task
+C: peformed by methods; have access to all data assoc. with object
+
+HIDING DETAILS
+
+Q: What is the key purpose of modeling an object? p14
+- information hiding/encapsulation
+- modeling: ignore irrelevant info p15 => abstraction of real concept
+- attributes are gen. adjectives; but can be nouns, when ref. to another obj
+- objents = nouns; methods = verbs
+- don't model future behavior/objects p16 
+- object has strong preference for privacy
+C: det. what the public interface will be
+
+OBJECT RELATIONSHIPS: ASSSOCIATION, COMPOSITION AND INHERITANCE p17
+
+Q: What are the ways we can create levels of abstraction?
+- comp. provides levels of abstraction, p17
+- 1st step: OOA->OOD: describe the design in terms of methods (bold) and obj's 
+	in (italics)
+- object/instance diagram = highest level of abstraction, p18
+C: majority: composition and inheritance, p17	
+
+Q: Explain aggrigation vs composition? p19
+- 1st aggregate objects can be independent
+- 2nd lifespan of outside/inside objects
+- composition is of aggregation
+- any composite can be aggregate; converse NOT true 
+- diff. irrelevant past design stage
+- composition: UML solid diamond
+- aggregation: UML hollow diamond
+C: two ways to differentiate 
+
+
+Q: What is inheritance? How does it work?
+- is-a relationship; 'Gary is-a player'
+- inheritnace is for methods and attributes fr. class;as features & behaviors 
+	fr. parents
+- UML: hollow arrows indicate inheritance, p21
+- describe: interface and abstract class, p21
+- describe: abstract method, p21
+- describe: method overide, p21
+C: 
+
+Q: How does Inheritance provide abstraction?
+- 
+C:

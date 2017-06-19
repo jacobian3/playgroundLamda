@@ -34,7 +34,7 @@ def print_these(*kwargs):
     print(kwargs)
 
 # whatever arg we pass becomes
-# dict with ??# of key/value pairs
+# dict with ?# of key/value pairs
 print_these() 
 print_these(a=5, b=10)
 print_these(this="that", other='another')
