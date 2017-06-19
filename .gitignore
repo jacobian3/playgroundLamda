@@ -26,6 +26,7 @@ script_playground/*
 *.log
 *.sql
 *.sqlite
+script_data/foodinspection/*
 
 OS generated files #
 ######################
