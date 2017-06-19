@@ -2,9 +2,10 @@
 *.swn
 *.swp
 *.DS_Store
-*.pycdebug.log
+*~
 __pycache__
+*.pycdebug.log
 /scripts_CE9980/courseMateial_CE9980 
-/scripts_CE9980/courseMateial_CE998666666 
+/scripts_CE9980/courseMateial_CE9986
 /script_playground
 .DS_Store
