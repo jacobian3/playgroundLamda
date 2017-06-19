@@ -1,11 +1,38 @@
+# Editor filese#
+######################
 *.swo
 *.swn
 *.swp
-*.DS_Store
 *~
-__pycache__
-*.pycdebug.log
-/scripts_CE9980/courseMateial_CE9980 
-/scripts_CE9980/courseMateial_CE9986
-/script_playground
+
+ompiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# project support data #
+######################
+scripts_CE9980/courseMateial_CE9980/*
+scripts_CE9980/courseMateial_CE9986/*
+script_playground/*
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+OS generated files #
+######################
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
