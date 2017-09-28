@@ -16,9 +16,9 @@ ompiled source #
 
 # project support data #
 ######################
-scripts_CE9980/courseMateial_CE9980/
-scripts_CE9980/courseMateial_CE9986/
-script_playground/*
+/scripts_CE9980/courseMateial_CE9980/
+/scripts_CE9980/courseMateial_CE9986/
+/script_playground/*
 
 
 # Logs and databases #
@@ -26,7 +26,7 @@ script_playground/*
 *.log
 *.sql
 *.sqlite
-script_data/
+/script_data/
 
 OS generated files #
 ######################
