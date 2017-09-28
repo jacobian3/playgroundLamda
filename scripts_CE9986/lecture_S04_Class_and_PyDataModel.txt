@@ -216,9 +216,9 @@ print(Coordinate.distance(c, origin)) # explicit call
 
 # What does it allow us to do?
     # sometimes when creating an object, we want to set some values?
-    # thes values are called 'properties'
+    # these values are called 'properties'
     # properties are 'object variables': self pairs the object w/ the instance.
-    # the __init__ argument pairs a value(the instnace's argument) with a name
+    # the __init__ argument pairs a value(the instance's argument) with a name
 
 # Why whould and how do we initialize an object?
     # 5. upon construction of a new object, if def__init__() is defined, it

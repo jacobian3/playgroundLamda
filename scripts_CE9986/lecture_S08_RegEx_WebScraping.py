@@ -24,9 +24,8 @@ import re
 #print(bool( re.search(r'^hey$', text) )) # False; space chrs are chrs also!!
 
 ## ex. @25:50
-
-print(bool
-( re.search(r'hey', 'ggg heyxxx') )) # True; b/c no anchor 
+#print(bool
+#( re.search(r'hey', 'ggg heyxxx') )) # True; b/c no anchor 
 
 ## CHARACTER CLASSES
 # see notes
@@ -51,25 +50,3 @@ print(bool
 #print( re.search(r'\d', 'hello yess ok 57') ) # True ;
 
 #  * you must account for EVERY chr!!!
-
-## INVERSE CHARACTER CLASSES
-# each chr class has an inverse
-#
-### Example: 
-#print( re.search(r'', '') ) # ;
-#exit()
-#
-### Example: 
-#print( re.search(r'', '') ) # ;
-#exit()
-#
-### Example: 
-#print( re.search(r'', '') ) # ;
-#exit()
-#
-### Example: 
-#print( re.search(r'', '') ) # ;
-#exit()
-
-
-

@@ -1,0 +1,10 @@
+assert:
+
+unit test
+pytest
+nose
+
+
+test discovery:  test_<name>
+
+

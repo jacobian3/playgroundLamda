@@ -1,0 +1,195 @@
+# EXAMPLE: REGEX NEGATION
+
+import re
+
+
+def plural(noun):
+    if re.search('[sxz]$', noun):               #(1)
+        return re.sub('$', 'es', noun)           #(2)
+    elif re.search('[^aeioudgkprt]h$', noun):
+        return re.sub('$', 'es', noun) 
+    elif re.search('[^aeiou]y$', noun):
+        return re.sub('y$', 'ies', noun) 
+    else: 
+        return noun + 's' 
+
+# Steps for #(1) search through the string arg
+#(2) find bracketed vals and substitute with an appropriate noun
+
+# EXAMPLE: CREATE FUNCTION FROM SELECTION STRUCTURE 
+import re
+
+def match_sxz(noun):                            #(5)
+    return re.search('[sxz]$', noun)
+
+def apply_sxz(noun):
+    return re.sub('$', 'es', noun)
+
+def match_h(noun):
+    return re.search('[^aeioudgkprt]h$', noun)
+
+def apply_h(noun):
+    return re.sub('$', 'es', noun)
+
+def match_y(noun):
+    return re.search('[^aeiou]y$', noun)
+        
+def apply_y(noun):
+    return re.sub('y$', 'ies', noun)
+
+def match_default(noun):
+    return True
+
+def apply_default(noun):
+    return noun + 's'
+
+rules = ((match_sxz, apply_sxz),            #(4)
+         (match_h, apply_h),
+         (match_y, apply_y),
+         (match_default, apply_default)
+         )
+
+def plural(noun):
+    for matches_rule, apply_rule in rules:  #(3) 
+        if matches_rule(noun):
+            return apply_rule(noun)
+
+
+# implicit main function
+if __name__ == '__main__':                  #(1)
+    import sys
+    if sys.argv[1:]:                        #(2)
+        print(plural(sys.argv[1]))
+    else:
+        print(__doc__)
+
+
+#Steps: 
+#1: if the __main__ THEN accept input from standard-in as argument for function
+#2: call
+#3: for each sequence of tuples, select approp. search condition and pair 
+#4:	sequence of tuples 
+#5: function definitions for each re.search and re.sub
+
+
+# WHAT IS A FIRST CLASS FUNCTION? 
+	# A: we can treat a function like a variable 
+	# (assignment, pass as arg, return)
+
+# EXAMPLE OF FIRST CLASS FUNCTION ASSIGNMENT
+
+def square(x):
+    return x * x
+
+f = square                      #1
+
+print(square)
+print(f(5))                     #2
+
+
+# 1 f is the function square; we assigned the function (less parenthesis)
+# to variable f; without parens, we get back a function object
+# 2 now f works now just like a the square(x) 
+
+
+# WHAT IS A HIGHER ORDER FUNCTION?
+	# pass func as arg and/or return func as result of other functions
+
+#EXAMPLE OF PASSING FUNCTION AS ARG
+
+def square(x):
+	return x * x
+
+def cube(x):
+	return x * x * x
+
+def my_map(func, arg_list): 				#1 
+	result = []
+	for i in arg_list:
+		result.append(func(i))
+	return result
+
+squares = my_map(square, [1, 2, 3, 4, 5])
+squares1 = my_map(cube, [1, 2, 3, 4, 5])
+
+print(squares) 
+print(squares1) 
+
+#1 pass square function in as arg to my_map function
+
+
+# WHAT IS A CLOSURE AND HOW DOES IT WORK?
+
+# EXAMPLE: CLOSURE AND HIGHER ORDER FUNCTION RETURNED 
+
+def logger(msg): 				#1 
+
+	def log_message():			#2
+		print('Log:', msg)
+
+	return log_message			#3
+
+log_hi = logger('Hi!')  		#4
+log_hi()						#5
+
+
+
+#1 logger function takes argument 
+#2 doesn't take arg; only prints message passed from logger()
+#3 we return logger_message; NOTE: log_message has no parens!!
+#4 set log_hi var =2 our logger(); we passed in argument
+#5 log_hi variable at this point  == log_message function
+     # we can treat log_hi just like log_message()
+     # when we executed log_hi(), it remembered arg passed to our 
+     # initial logger function: this is known as a closure!!!!
+
+
+EXAMPLE: PRACTICAL USE OF CLOSURES
+
+def html_tag(tag):								#2
+
+	def wrap_text(msg):
+		print('<{0}>{1}</{0}>'.format(tag, msg)) #note
+
+	return wrap_text
+
+print_h1 = html_tag('h1') 						#1,3
+print_h1('Test Headline!')						#4  #<h1>Test Paragraph<h1>
+print_h1('Another Headline!')
+
+print_p = html_tag('p')							#5  #<p>Test Paragraph<p>
+print_p('Test Paragraph!')
+
+
+#NOTE use of formatters with index ???
+#1 call function with argument;
+#2 the argument is pased to the function inside of the called func.
+#3 this function is returned and assigned to var: print_h1
+	#However, at this point no action has occured; we only assigned 
+	# a funciton object to a var. this var 
+#4 When we call print_h1 with the 'msg' arg, the new function remembers the
+	# privious argument data (this is the closure)
+#5 this process is very similar to class instantian; why???
+
+
+# EXAMPLE: CLOSURE TO MAKE FUNCTIONS TO GET MULTIPLE MULTIPLICATION FUNCTIONS
+
+def multiplier_of(n): 		# takes arg as global
+    def multiplier(number):	# multiplies the param var by new num. 
+        return number*n
+    return multiplier
+
+multiplywith5 = multiplier_of(5) # assigns a function with a prev. assigned var
+print(multiplywith5(9)) 		# uses the assignment to take a new arg
+
+multiplywith4 = multiplier_of(4)
+print(multiplywith4(9))
+
+
+# DECORATORS
+
+
+What is a Decorator? How is it used?
+
+
+What is are **kwargs and **args

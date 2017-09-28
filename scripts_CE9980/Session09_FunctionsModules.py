@@ -3,6 +3,10 @@
     # that we can call by name
     # pro: they keep 'main body' code to min
 
+# What is scope?
+
+
+
 # What is a pure function? @ 10:59
     # a function that doesn't refer to outside vars
     # easiest functions to manage is a pure func.
@@ -11,6 +15,7 @@
 # What happens if assign a function that doesn't return anything?
     # None is returned by default @ 25:45
     # by functions not designed to return ...but you assigne it
+    # ex: x = x.append(y) # assigning x.append(y) ret. 'None'
 
 # INTRODUCTION: USER-DEFINED FUNCTIONS
 # What are two primary reasons functions are useful?
@@ -72,6 +77,7 @@
 
 # THE FOUR VARIABLE SCOPES: (L)OCAL, (E)NCLOSING, (G)LOBAL AND (B)UILTINL
 # What are the four "naming" scopes within Python?
+    # namelookup overides: local > enclosing > global > builtin scope
 
 # SUMMARY EXCEPTION: UNBOUNDLOCALERROR
 # If we recieve an UnboundLocalError, what has happened?
@@ -84,11 +90,22 @@
     # the attributes of a module are the global variables of 
     # that file (includes: var and function defs)
 
+# what is the attribute of a module?
+    # ex: this.that() # that is a global of module that
+    # it is a global variable; this includes functions (they are just vars!!)
+    # ie: var = 5 ; is 5 global or local?
+    # objects(5) are not global or local; its the (name)space that is scoped
+
+
 # SUMMARY STATEMENT: IMPORT MODULENAME
 # How are modules accessed as attributes?
+    # use: from <module name> import <attribute>
+# how do we eliminate the module prepend?
+    # never!!! from <module name> import * DON'T DO!!!
 
 # SUMMARY STATEMENT: IMPORT MODULENAME AS CONVENIENTNAME
 # How can we make the import of modules more convienient?
+    # or : import <modlue name> as <convient name>
 
 # SUMMARY STATEMENT: FROM MODULENAME IMPORT VARIABLENAME
 # How do we directly import variable names from modules?
@@ -117,3 +134,5 @@
 # CHANGING A DATE USING THE TIMEDELTA OBJECT
 # Explain how timedelta is used to calculate the 
 # difference b/t dates?
+
+# 

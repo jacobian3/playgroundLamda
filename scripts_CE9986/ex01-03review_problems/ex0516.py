@@ -1,8 +1,8 @@
-filename = '../script_data/revenue.txt'
+filename = '../../script_data/revenue.txt'
 
-#print(open(filename).readlines()[0:3]) #debug file
-#print(open(filename).readlines()[-1])
-#exit()
+print(open(filename).readlines()[0:3]) #debug file
+print(open(filename).readlines()[-1])
+exit()
 
 mydict = {} 
 

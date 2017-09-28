@@ -1,0 +1,22 @@
+slice technique
+
+s[:-4] #1
+s[-4:]
+
+# 1 means: index 0 to from 4 back from the end
+# means: from 4 from the end till the end
+# ??? could be usefull for challenge problem
+
+
+verbose regular expressions take extra arg: re.VERBOSE
+- allow comments to be added
+
+pattern = """
+^  					# comment
+M{0,3} 				# comment
+(CM|CD|D?C{0,3}) 	# comment
+$					# comment (whitespace and # are ignored)
+"""
+
+re.search(pattern, 'M', re.VERBOSE)
+

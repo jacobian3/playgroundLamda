@@ -1,5 +1,7 @@
-# 5 key ideas of a class:
+# NOTE: the word Class is a synanym for word Type   
 
+
+# ??? 5 key ideas of a class:?
 
 
 # What is a constructor? @24:38
@@ -31,15 +33,15 @@
     # to add a function to a class use 'def' keyword
     # 'def' replaces the pass keyword scaffolding
    
+# are Class and module attribes the same? if not how not?
+    #???
+
 # What are class characteristics? How do we apply them? (pykids,97)
     # characteristic: trait shared by all members of 
     # the class (and its children)
     # characteristics: aka actions, or functions)
     # ea. class can use characteristics (functions) of its parent.
 
-# What are good reason to use classes and objects, instead of just using 
-# functions? (pykids,98)
-    # can only import one one module at a time per .py . Class instances are 
     # like mini-modules. you can make many individual imports that don't 
     # interfere with one-another. AKA: instantiation
 
