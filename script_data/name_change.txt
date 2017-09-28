@@ -1,8 +1,0 @@
-Examples02_VARIABLES.py
-Examples03_CONDITIONALS.py
-Examples04_FUNCTIONS.py
-Examples06_STRINGS.py
-Examples07_FILES.py
-Examples08_LIST_SET_GEN.py
-Examples09_DICTIONARIES.py
-Examples10_TUPLES.py

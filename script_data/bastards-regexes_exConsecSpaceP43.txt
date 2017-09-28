@@ -1,6 +1,0 @@
-This is                  paragraph 
-      text 
-      used as               filler text 
-         for  
-                 a 
-paragraph.
