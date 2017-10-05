@@ -23,6 +23,11 @@ class Car():
         """ Set the odometer reading to the given value."""
         self.odometer_reading = mileage
 
+        if mileage < self.odometer_reading:
+            print("You can't roll back an odometer!")
+        else:
+            self.odometer_reading = mileage
+
 def main():
     # make instance of car class and store in instance variable
     my_new_car = Car('audi', 'a4', 2016)
@@ -31,7 +36,12 @@ def main():
 
     # ???  my_car.make = 'BMW' doesn't work as expected
 
-    my_new_car.update_odometer(23)
+    # modify attribute through method
+    my_new_car.update_odometer(20000)
+    my_new_car.read_odometer()
+
+    # modify attribute through method with conditions
+    my_new_car.update_odometer(30000) # 'roll back odometer')
     my_new_car.read_odometer()
     
 
