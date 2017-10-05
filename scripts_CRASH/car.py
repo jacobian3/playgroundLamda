@@ -20,13 +20,18 @@ class Car():
         print("This car has " + str(self.odometer_reading) + " miles on it.")
 
     def update_odometer(self, mileage):
-        """ Set the odometer reading to the given value."""
-        self.odometer_reading = mileage
-
-        if mileage < self.odometer_reading:
-            print("You can't roll back an odometer!")
-        else:
+        """ 
+        Set the odometer reading to the given value.
+        Reject the change, if it attempts to roll the odometer back. 
+        """
+        if mileage >= self.odometer_reading:
             self.odometer_reading = mileage
+        else:
+            print("You can't roll back an odometer!")
+
+    def increment_odometer(self, miles):
+        """ Add the given amount to the odometer reading. """
+        self.odometer_reading += miles
 
 def main():
     # make instance of car class and store in instance variable
@@ -34,16 +39,28 @@ def main():
     print(my_new_car.get_descriptive_name())
     my_new_car.read_odometer()
 
-    # ???  my_car.make = 'BMW' doesn't work as expected
-
     # modify attribute through method
     my_new_car.update_odometer(20000)
     my_new_car.read_odometer()
 
     # modify attribute through method with conditions
-    my_new_car.update_odometer(30000) # 'roll back odometer')
+    my_new_car.update_odometer(30) # 'roll back odometer')
     my_new_car.read_odometer()
+
+    # add miles to existing odometer 
+    my_new_car.increment_odometer(300)
+    my_new_car.read_odometer()
+
+    # if new used_car instance, add miles 
+    # and increment the odometer 
+    my_used = Car("BMW", "3Series", 2006)
+    print(my_used.get_descriptive_name())
+
+    my_used.increment_odometer(130500)
+    my_used.read_odometer()
     
+    my_used.increment_odometer(100)
+    my_used.read_odometer()
 
 if __name__ == "__main__":
     main()
