@@ -1,26 +1,3 @@
-class ElectricCar(Car):
-    """ Represent aspects of a car, specific to electric vehicles."""
-    # Initialize the new class and accept parameters passed from the intance
-    # Initialize all new attibutes of child class
-    def __init__(self, make, model, year):
-        """ 
-        Initialize attributes of the parent class.
-        Then initialize attributes specific to an electric car
-        """
-        # connect the parrent class to the child class and access all attribute
-        # data
-        super().__init__(make, model, year)
-        # add new attributes to differentiate parent child relationship
-        self.battery = Battery() # call Battery class to get battery
-        # information
-        # or said another way: create an instance of the Batery class and set 
-        # self to 'battery'
-
-    def describe_battery(self):
-        """ Print a statement describing the battery size."""
-        print("This car has a " + str(self.battery_size) + "-kWh battery.")
-
-
 class Battery():
     """A simple attempt to model a battery. """
     # set default battery to 70 to facilitate later function calls out of class
