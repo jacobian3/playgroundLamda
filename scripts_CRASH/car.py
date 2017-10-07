@@ -1,5 +1,5 @@
 class Car():
-    """A set of classes to represent gas and electic cars."""
+    """A set of classes to represent gas cars."""
 
     def __init__(self, make, model, year):
         """ Initialize attributes to describe a car. """
@@ -32,44 +32,4 @@ class Car():
     def increment_odometer(self, miles):
         """ Add the given amount to the odometer reading. """
         self.odometer_reading += miles
-
-class ElectricCar(Car):
-    """ Represent aspects of a car, specific to electric vehicles."""
-    # Initialize the new class and accept parameters passed from the intance
-    # Initialize all new attibutes of child class
-    def __init__(self, make, model, year):
-        """ 
-        Initialize attributes of the parent class.
-        Then initialize attributes specific to an electric car
-        """
-        # connect the parrent class to the child class and access all attribute
-        # data
-        super().__init__(make, model, year)
-        # add new attributes to differentiate parent child relationship
-        self.battery = Battery() # call Battery class to get battery
-        # information
-        # or said another way: create an instance of the Batery class and set 
-        # self to 'battery'
-
-class Battery():
-    """A simple attempt to model a battery. """
-    # set default battery to 70 to facilitate later function calls out of class
-    def __init__(self, battery_size=70):
-        """ Initialize battery attributes. """
-        self.battery_size = battery_size
-
-    def describe_battery(self):
-        """ Print a statement describing the battery size."""
-        print("This car has a " + str(self.battery_size) + "-kWh battery.")
-
-    def get_range(self):
-        """ Print a statement about the range of of this battery."""
-        if self.battery_size == 70:
-            range = 240
-        elif self.battery_size == 85:
-            range = 270
-
-        message = "This car can go approximately " + str(range)
-        message += " miles on a full charge."
-        print(message)
 
