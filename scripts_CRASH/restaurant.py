@@ -7,10 +7,10 @@ class Restaurant():
     def describe_restaurant(self):
         """print a statement describing the restaurant"""
 
-        print("This restaurant is named " + self.restaurant_name)
-        print(self.restaurant_name.title() + "'s best meal is " + \
-self.cuisine_type.title() + \
-                ".")
+        print("\nThis restaurant is named " + self.restaurant_name)
+        print(self.restaurant_name.title() + "'s best meal are " + \
+            self.cuisine_type.title() +  ".")
 
-fav_joint = Restaurant('Chick-fil-A','chick-burger')
-fav_joint.describe_restaurant()
+if __name__ == '__main__':
+    fav_joint = Restaurant('Chick-fil-A','chick-burger')
+    fav_joint.describe_restaurant()
