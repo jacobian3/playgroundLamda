@@ -25,6 +25,7 @@ class Restaurant():
         print(num)
 
 if __name__ == '__main__':
+
     fav_joint = Restaurant('Chick-fil-A','chick-burger')
     fav_joint.describe_restaurant()
 
